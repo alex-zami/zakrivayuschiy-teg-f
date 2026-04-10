@@ -79,6 +79,7 @@
     0 1px var(--label-stroke-color),
     1px 0 var(--label-stroke-color),
     0 -1px var(--label-stroke-color);
+   mix-blend-mode: hard-light;
 }
 
 @supports (
@@ -89,7 +90,6 @@
     text-shadow: none;
     -webkit-text-stroke: 1px var(--label-stroke-color);
     text-stroke: 1px var(--label-stroke-color);
-    mix-blend-mode: hard-light;
   }
 }
 
@@ -205,10 +205,10 @@
   fill: var(--animation-fill-color);
 }
 
-.like-icon.is-liked .contour {
+.like-icon.is-liked .core {
   transition: fill 0.3s linear;
 }
-.like-icon.is-liked .core {
+.like-icon.is-liked .contour {
   transition: fill 0.3s linear 0.06s;
 }
 
